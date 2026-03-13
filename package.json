@@ -1,0 +1,44 @@
+{
+  "name": "@boringordinary/wordcode",
+  "version": "0.2.0",
+  "description": "Human-readable, crypto-secure verification codes. Three random words (1 billion combinations) as a memorable alternative to 6-digit PINs.",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node && bun run build:types",
+    "build:types": "tsc --emitDeclarationOnly --declaration --outDir dist",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "otp",
+    "passphrase",
+    "wordcode",
+    "word-code",
+    "one-time-password",
+    "authentication",
+    "2fa",
+    "verification",
+    "memorable",
+    "human-readable"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boringordinary/wordcode"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
