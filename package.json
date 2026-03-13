@@ -36,8 +36,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/boringordinary/packages",
-    "directory": "packages/wordcode"
+    "url": "https://github.com/boringordinary/wordcode"
   },
   "devDependencies": {
     "typescript": "^5.0.0"
